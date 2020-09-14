@@ -14,9 +14,9 @@ import (
 
 	"github.com/brocaar/chirpstack-api/go/v3/common"
 	"github.com/brocaar/chirpstack-api/go/v3/gw"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/backend/basicstation/structs"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/backend/events"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
+	"github.com/iBrick/lora-gateway-bridge/internal/backend/basicstation/structs"
+	"github.com/iBrick/lora-gateway-bridge/internal/backend/events"
+	"github.com/iBrick/lora-gateway-bridge/internal/config"
 	"github.com/brocaar/lorawan"
 )
 

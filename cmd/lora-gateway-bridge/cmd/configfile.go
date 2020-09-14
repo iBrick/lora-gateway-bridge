@@ -23,8 +23,8 @@ log_to_syslog={{ .General.LogToSyslog }}
 # Filters.
 #
 # These can be used to filter LoRaWAN frames to reduce bandwith usage between
-# the gateway and ChirpStack Gateway Bridge. Depending the used backend, filtering
-# will be performed by the Packet Forwarder or ChirpStack Gateway Bridge.
+# the gateway and Gateway Bridge. Depending the used backend, filtering
+# will be performed by the Packet Forwarder or Gateway Bridge.
 [filters]
 
 # NetIDs filters.
@@ -92,7 +92,7 @@ type="{{ .Backend.Type }}"
   fake_rx_time={{ .Backend.SemtechUDP.FakeRxTime }}
 
 
-  # ChirpStack Concentratord backend.
+  #  Concentratord backend.
   [backend.concentratord]
 
   # Check for CRC OK.
@@ -350,7 +350,7 @@ marshaler="{{ .Integration.Marshaler }}"
 
     # Token expiration (symmetric key authentication).
     #
-    # ChirpStack Gateway Bridge will generate a SAS token with the given expiration.
+    #  Gateway Bridge will generate a SAS token with the given expiration.
     # After the token has expired, it will generate a new one and trigger a
     # re-connect (only for symmetric key authentication).
     sas_token_expiration="{{ .Integration.MQTT.Auth.AzureIoTHub.SASTokenExpiration }}"
@@ -446,7 +446,7 @@ marshaler="{{ .Integration.Marshaler }}"
 # Executable commands.
 #
 # The configured commands can be triggered by sending a message to the
-# ChirpStack Gateway Bridge.
+#  Gateway Bridge.
 [commands]
   # Example:
   # [commands.commands.reboot]

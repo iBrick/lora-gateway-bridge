@@ -4,7 +4,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/backend/events"
+	"github.com/iBrick/lora-gateway-bridge/internal/backend/events"
 	"github.com/brocaar/lorawan"
 	"github.com/gorilla/websocket"
 )

@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
+	"github.com/iBrick/lora-gateway-bridge/internal/config"
 	"github.com/brocaar/lorawan"
 	"github.com/brocaar/lorawan/band"
 )
