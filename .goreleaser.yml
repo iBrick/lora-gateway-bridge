@@ -1,0 +1,51 @@
+project_name: lora-gateway-bridge
+
+env:
+  - GOMIPS=softfloat
+
+builds:
+  - main: cmd/lora-gateway-bridge/main.go
+    binary: lora-gateway-bridge
+    goos:
+      - windows
+      - darwin
+      - linux
+    goarch:
+      - amd64
+      - 386
+      - arm
+      - arm64
+      - mips
+    goarm:
+      - 5
+      - 6
+      - 7
+    ignore:
+      - goos: darwin
+        goarch: 386
+    hooks:
+      post: ./packaging/scripts/compress-mips.sh
+
+release:
+  disable: true
+
+nfpm:
+  vendor: InnoLabs
+  homepage: https://lpwa.ru/
+  maintainer: Innolabs <mail@lpwa.ru>
+  description: LoRa GW Bridge
+  license: 
+  formats:
+    - deb
+    - rpm
+  bindir: /usr/bin
+  files:
+    "packaging/files/lora-gateway-bridge.rotate": "/etc/logrotate.d/lora-gateway-bridge"
+    "packaging/files/lora-gateway-bridge.init": "/usr/lib/lora-gateway-bridge/scripts/lora-gateway-bridge.init"
+    "packaging/files/lora-gateway-bridge.service": "/usr/lib/lora-gateway-bridge/scripts/lora-gateway-bridge.service"
+  config_files:
+    "packaging/files/lora-gateway-bridge.toml": "/etc/lora-gateway-bridge/lora-gateway-bridge.toml"
+  scripts:
+    preinstall: "packaging/scripts/pre-install.sh"
+    postinstall: "packaging/scripts/post-install.sh"
+    postremove: "packaging/scripts/post-remove.sh"
