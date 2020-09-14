@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/backend/events"
+	"github.com/iBrick/lora-gateway-bridge/internal/backend/events"
 	"github.com/brocaar/lorawan"
 )
 

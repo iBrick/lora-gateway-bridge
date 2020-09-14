@@ -1,4 +1,4 @@
-module github.com/brocaar/chirpstack-gateway-bridge
+module github.com/iBrick/lora-gateway-bridge
 
 go 1.14
 

@@ -14,8 +14,8 @@ import (
 	log "github.com/sirupsen/logrus"
 
 	"github.com/brocaar/chirpstack-api/go/v3/gw"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/integration"
+	"github.com/iBrick/lora-gateway-bridge/internal/config"
+	"github.com/iBrick/lora-gateway-bridge/internal/integration"
 	"github.com/brocaar/lorawan"
 )
 

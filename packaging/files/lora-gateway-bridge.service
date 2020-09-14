@@ -1,13 +1,13 @@
 [Unit]
-Description=ChirpStack Gateway Bridge
-Documentation=https://www.chirpstack.io/
+Description=LoRa Gateway Bridge
+Documentation=https://lo-ra.net/
 Wants=network-online.target
 After=network-online.target
 
 [Service]
 User=gatewaybridge
 Group=gatewaybridge
-ExecStart=/usr/bin/chirpstack-gateway-bridge
+ExecStart=/usr/bin/lora-gateway-bridge
 Restart=on-failure
 
 [Install]

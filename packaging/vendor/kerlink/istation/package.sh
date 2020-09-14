@@ -1,6 +1,6 @@
 #!/bin/env bash
 
-PACKAGE_NAME="chirpstack-gateway-bridge"
+PACKAGE_NAME="lora-gateway-bridge"
 PACKAGE_VERSION=$1
 REV="r1"
 
@@ -18,11 +18,11 @@ cat > $PACKAGE_DIR/CONTROL/control << EOF
 Package: $PACKAGE_NAME
 Version: $PACKAGE_VERSION-$REV
 Architecture: klkgw
-Maintainer: Orne Brocaar <info@brocaar.com>
+Maintainer: InnoLabs <mail@lpwa.ru>
 Priority: optional
 Section: network
 Source: N/A
-Description: ChirpStack Gateway Bridge
+Description: LoRa Gateway Bridge
 EOF
 
 cat > $PACKAGE_DIR/CONTROL/conffiles << EOF

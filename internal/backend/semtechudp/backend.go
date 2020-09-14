@@ -14,10 +14,10 @@ import (
 	log "github.com/sirupsen/logrus"
 
 	"github.com/brocaar/chirpstack-api/go/v3/gw"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/backend/events"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/backend/semtechudp/packets"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/filters"
+	"github.com/iBrick/lora-gateway-bridge/internal/backend/events"
+	"github.com/iBrick/lora-gateway-bridge/internal/backend/semtechudp/packets"
+	"github.com/iBrick/lora-gateway-bridge/internal/config"
+	"github.com/iBrick/lora-gateway-bridge/internal/filters"
 	"github.com/brocaar/lorawan"
 )
 

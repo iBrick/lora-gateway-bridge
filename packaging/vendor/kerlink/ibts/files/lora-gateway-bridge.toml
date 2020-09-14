@@ -1,9 +1,16 @@
 # This configuration provides a Semtech UDP packet-forwarder backend and
 # integrates with a MQTT broker. Many options and defaults have been omitted
 # for simplicity.
+
+
+[general]
+# debug=5, info=4, warning=3, error=2, fatal=1, panic=0
+log_level=4
+
+# Log to syslog.
 #
-# See https://www.chirpstack.io/gateway-bridge/install/config/ for a full
-# configuration example and documentation.
+# When set to true, log messages are being written to syslog.
+log_to_syslog=true
 
 
 # Gateway backend configuration.
