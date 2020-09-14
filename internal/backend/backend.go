@@ -5,7 +5,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/brocaar/lora-api/go/v3/gw"
+	"github.com/brocaar/chirpstack-api/go/v3/gw"
 	"github.com/iBrick/lora-gateway-bridge/internal/backend/basicstation"
 	"github.com/iBrick/lora-gateway-bridge/internal/backend/concentratord"
 	"github.com/iBrick/lora-gateway-bridge/internal/backend/events"
