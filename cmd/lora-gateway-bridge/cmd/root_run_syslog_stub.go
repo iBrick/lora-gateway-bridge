@@ -3,7 +3,7 @@
 package cmd
 
 import (
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
+	"github.com/iBrick/lora-gateway-bridge/internal/config"
 	log "github.com/sirupsen/logrus"
 )
 

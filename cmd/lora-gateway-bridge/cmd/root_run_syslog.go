@@ -5,7 +5,7 @@ package cmd
 import (
 	"log/syslog"
 
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
+	"github.com/iBrick/lora-gateway-bridge/internal/config"
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 	lsyslog "github.com/sirupsen/logrus/hooks/syslog"

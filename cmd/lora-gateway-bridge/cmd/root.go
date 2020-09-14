@@ -12,7 +12,7 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
+	"github.com/iBrick/lora-gateway-bridge/internal/config"
 )
 
 var cfgFile string // config file

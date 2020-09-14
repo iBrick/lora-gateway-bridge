@@ -9,14 +9,14 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/backend"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/commands"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/filters"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/forwarder"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/integration"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/metadata"
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/metrics"
+	"github.com/iBrick/lora-gateway-bridge/internal/backend"
+	"github.com/iBrick/lora-gateway-bridge/internal/commands"
+	"github.com/iBrick/lora-gateway-bridge/internal/config"
+	"github.com/iBrick/lora-gateway-bridge/internal/filters"
+	"github.com/iBrick/lora-gateway-bridge/internal/forwarder"
+	"github.com/iBrick/lora-gateway-bridge/internal/integration"
+	"github.com/iBrick/lora-gateway-bridge/internal/metadata"
+	"github.com/iBrick/lora-gateway-bridge/internal/metrics"
 )
 
 func run(cmd *cobra.Command, args []string) error {

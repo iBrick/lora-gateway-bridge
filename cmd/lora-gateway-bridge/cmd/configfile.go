@@ -4,7 +4,7 @@ import (
 	"html/template"
 	"os"
 
-	"github.com/brocaar/chirpstack-gateway-bridge/internal/config"
+	"github.com/iBrick/lora-gateway-bridge/internal/config"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 )
