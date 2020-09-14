@@ -1,0 +1,32 @@
+# hidden files
+.*
+
+# Vagrant
+Vagrantfile
+
+# configuration files
+/*.toml
+
+# coverage file
+/coverage.out
+
+# certificates
+/certs
+
+# binaries
+/dist
+/build
+/docs/public
+*.ipk
+
+# build folders
+/packaging/vendor/*/*/package
+/packaging/vendor/*/*/temp
+/packaging/vendor/*/*/*.tar.gz
+/packaging/vendor/*/*/key
+
+# dependencies
+/vendor
+
+# certificates
+/certs
